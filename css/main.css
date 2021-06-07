@@ -1,0 +1,103 @@
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+#quote {
+  position:absolute;
+  border-radius: 15px;
+  padding: 10px;
+  left:200px;
+  top:15px;
+  width:500px;
+  height:575px;
+  background-color: rgb(143, 131, 110);
+}
+
+#quote h1{
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+#quote p{
+  padding-bottom: 10px;
+}
+
+#imgcontainer {
+  position:absolute;
+  left:750px;
+  top:20px;
+  width:275px;
+  height:275px;
+}
+
+#imgcontainer img{
+  margin-top: 10px;
+  border-radius: 15px;
+  width: 275px;
+  height: 275px;
+}
+
+#links {
+  position:absolute;
+  text-align: center;
+  background-color: #999;
+  border-radius: 10px;
+  left:220px;
+  top:630px;
+  padding-top: 15px;
+  width:100px;
+  height:30px;
+}
+
+#links a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#plane-animation {
+  position: absolute;
+  top: 250px;
+  left: 1050px;
+  animation: rotation 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotation {
+  from{
+        transform: rotateZ(0deg);
+  }
+
+  to{
+        transform: rotateZ(15deg);
+  }
+}
+
+@keyframes rotation-inverse {
+  from{
+        transform: rotateZ(15deg);
+  }
+
+  to{
+        transform: rotateZ(0deg);
+  }
+}
+
+#plane-animation img {
+  width: 100px;
+  height: 100px;
+}
+
+#palm{
+  position: absolute;
+  top: 250px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  animation: rotation-inverse 3s ease-in-out infinite alternate;
+}
+
+.rotate {
+  animation: rotation 2s ease-out 1 alternate;
+}
